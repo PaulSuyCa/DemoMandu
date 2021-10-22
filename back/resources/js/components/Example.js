@@ -5,15 +5,30 @@ export default class Example extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <div className="card">
-                            <div className="card-header">Example Component</div>
-
-                            <div className="card-body">I'm an example component!</div>
-                        </div>
-                    </div>
-                </div>
+                    <h3>Mandu</h3>
+                <hr/>
+                <table class="table table-bordered order-table ">
+                <thead>
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Division Superior</th>
+                    <th>Colaboradores</th>
+                    <th>Niveles</th>
+                    <th>Subdivisiones</th>
+                    <th>Embajadores</th>
+                    </tr>
+                </thead>
+                <tbody id="bodytable">
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Division Superior</td>
+                        <td>Colaboradores</td>
+                        <td>Niveles</td>
+                        <td>Subdivisiones</td>
+                        <td>Embajadores</td>
+                    </tr>
+                </tbody>
+                </table>
             </div>
         );
     }
