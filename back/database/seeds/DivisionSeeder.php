@@ -53,7 +53,7 @@ class DivisionSeeder extends Seeder
             'estado'=>1
         ]);
         DB::table('divisiones')->insert([
-            'nombre' => 'Diseñp',
+            'nombre' => 'Diseño',
             'Dsup_id'=>3,
             'nombre_Dsup'=>"Division de Marketing",
             'num_subd'=>0,

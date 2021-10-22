@@ -121,4 +121,23 @@ class DivisionController extends Controller
         $division->save();
         return response()->json($division, 200);
     }
+
+    public function addVoluntario(Request $request)
+    {
+        //obteniendo datos
+        $data = $request->json()->all();
+
+        //creando Division
+        $division = Division::create([
+            'nombre' => $data['nombre'],
+            'Dsup_id'=>$data['Dsup_id'],
+            'nombre_Dsup'=>$data['nombre_Dsup'],
+            'num_subd'=>0,
+            'nivel'=>3,
+            'cantidad'=>10,
+            'embajador'=>$data['embajador'],
+        ]);
+
+        return response()->json(["division"=>$division],200);
+    }
 }
